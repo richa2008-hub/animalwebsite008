@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stray Buddy - Rescue & Adoption</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            color: #333;
+            scroll-behavior: smooth;
+        }
+        
+        /* Navigation */
+        nav {
+            background: #fff;
+            border-bottom: 1px solid #ddd;
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            align-items: center;
+        }
+        nav a {
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-right: 30px;
+            color: #e67e22;
+        }
+
+        /* Hero Section */
+        header {
+            padding: 60px 20px;
+            text-align: center;
+            background-color: #fdfdfd;
+        }
+        .hero-images {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+        .hero-images img {
+            width: 250px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        header p {
+            font-style: italic;
+            max-width: 600px;
+            margin: 20px auto;
+            color: #555;
+        }
+
+        /* Sections */
+        section { 
+            padding: 50px 20px; 
+            max-width: 800px; 
+            margin: auto; 
+            border-bottom: 1px solid #eee;
+        }
+        h2 { text-transform: uppercase; letter-spacing: 2px; text-align: center; color: #2c3e50; }
+
+        /* Forms */
+        .form-group { margin-bottom: 20px; border-bottom: 1px solid #ccc; padding-bottom: 5px; }
+        label { display: block; margin-bottom: 5px; font-weight: bold; }
+        input[type="text"], input[type="email"], textarea {
+            width: 100%;
+            border: none;
+            outline: none;
+            padding: 8px;
+            background: transparent;
+            font-size: 1rem;
+        }
+        
+        /* Buttons */
+        .btn-main {
+            display: inline-block;
+            min-width: 140px;
+            margin: 10px;
+            padding: 12px 25px;
+            border: 2px solid #333;
+            background: #333;
+            color: #fff;
+            cursor: pointer;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: 0.3s;
+        }
+        .btn-main:hover {
+            background: #e67e22;
+            border-color: #e67e22;
+            color: #fff;
+        }
+
+        /* Donation Section QR */
+        .qr-container {
+            width: 200px;
+            margin: 20px auto;
+            padding: 15px;
+            border: 2px solid #e67e22;
+            border-radius: 15px;
+            background: #fff;
+        }
+        .qr-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .social-links { list-style: none; padding: 0; }
+        .social-links li { margin: 10px 0; font-weight: bold; color: #e67e22; }
+
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">STRAY BUDDY</div>
+        <a href="#home">Home</a>
+        <a href="#rescue">Rescue</a>
+        <a href="#donation">Donation</a>
+        <a href="#adoption">Adoption</a>
+        <a href="#contact">Contact Us</a>
+    </nav>
+
+    <header id="home">
+        <div class="hero-images">
+            <img src="https://images.unsplash.com/photo-1534361960057-19889db9621e?auto=format&fit=crop&w=500&q=80" alt="Dog">
+            <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&w=500&q=80" alt="Cat">
+        </div>
+        <h1>STRAY BUDDY</h1>
+        <p>"Street dogs and cats face danger and hunger everyday. Together, we can turn their struggles into stories of hope and happiness."</p>
+        <div style="display: flex; justify-content: center; flex-wrap: wrap;">
+            <a href="#rescue" class="btn-main" style="text-decoration:none; text-align:center;">RESCUE</a>
+            <a href="#donation" class="btn-main" style="text-decoration:none; text-align:center;">DONATION</a>
+            <a href="#adoption" class="btn-main" style="text-decoration:none; text-align:center;">ADOPTION</a>
+        </div>
+    </header>
+
+    <section id="rescue">
+        <h2>RESCUE PAGE</h2>
+        <div style="text-align:center;">
+            <img src="https://images.unsplash.com/photo-1450778869180-41d0601e046e?auto=format&fit=crop&w=800&q=80" alt="Rescue" style="width:100%; max-width:500px; border-radius: 10px; margin-bottom: 20px;">
+            <p>"See a street pet in need? Every action counts."</p>
+            <h3 style="color: #c0392b;">Emergency Helpline Number: 8080</h3>
+        </div>
+        
+        <form id="rescueForm">
+            <h3 style="text-align: center;">Rescue Form</h3>
+            <div class="form-group"><label>Name</label><input type="text" required></div>
+            <div class="form-group"><label>Location</label><input type="text" required></div>
+            <div class="form-group"><label>Type of Animal</label><input type="text" required></div>
+            <div class="form-group"><label>Photo upload</label><input type="file"></div>
+            <button type="submit" class="btn-main">SUBMIT RESCUE REQUEST</button>
+        </form>
+    </section>
+
+    <section id="donation">
+        <h2>DONATION PAGE</h2>
+        <div style="text-align: center;">
+            <p>Scan the QR code below to contribute to their well-being.</p>
+            
+            <div class="qr-container">
+                <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=StrayBuddyDonation" alt="Donation Scanner QR Code">
+                <p style="font-size: 12px; margin-top: 10px; font-weight: bold; color: #e67e22;">SCAN TO PAY</p>
+            </div>
+
+            <div style="text-align: left; background: #fafafa; padding: 20px; border-radius: 10px; border: 1px solid #ddd; margin: 20px 0;">
+                <h4 style="margin-top:0;">Your donation covers:</h4>
+                <ul style="padding-left: 20px;">
+                    <li>Medical Treatment & Surgeries</li>
+                    <li>Food and Shelter</li>
+                    <li>Vaccination</li>
+                </ul>
+            </div>
+            <button class="btn-main" onclick="alert('Thank you for your kindness! Please scan the QR code to complete your donation.')">DONE DONATING</button>
+        </div>
+    </section>
+
+    <section id="adoption">
+        <h2>ADOPTION PAGE</h2>
+        <div style="text-align: center;">
+            <p>Adoption changes lives. Open your home and save a life.</p>
+            <div style="font-size: 50px;">🏠❤️</div>
+        </div>
+        
+        <h3 style="text-align: center; margin-top: 40px;">ADOPTION FORM</h3>
+        <form id="adoptionForm">
+            <div class="form-group"><label>Full Name</label><input type="text" required></div>
+            <div class="form-group"><label>Phone Number</label><input type="text" required></div>
+            <div class="form-group"><label>Pet Interest (Dog/Cat)</label><input type="text" required></div>
+            <div style="margin: 20px 0;">
+                <input type="checkbox" id="agree" required> <label for="agree" style="display:inline;">I agree to provide a safe home.</label>
+            </div>
+            <button type="submit" class="btn-main">SUBMIT ADOPTION FORM</button>
+        </form>
+    </section>
+
+    <footer id="contact">
+        <section style="border:none; text-align: center;">
+            <h2>CONTACT US</h2>
+            <p><strong>📧 Email:</strong> Straybuddy@gmail.com</p>
+            <p><strong>📞 Phone no:</strong> 1234567890</p>
+            <p style="font-size: 0.8rem; margin-top: 40px;">&copy; 2024 Stray Buddy Team</p>
+        </section>
+    </footer>
+
+    <script>
+        // Message for Rescue Form
+        document.getElementById('rescueForm').onsubmit = function(e) {
+            e.preventDefault();
+            alert("Thank you! Our rescue team has been notified. We will reach the location as soon as possible.");
+            this.reset();
+        };
+
+        // Message for Adoption Form
+        document.getElementById('adoptionForm').onsubmit = function(e) {
+            e.preventDefault();
+            alert("Application Received! ❤️ Our team will review your form and contact you within 48 hours for a home visit.");
+            this.reset();
+        };
+    </script>
+
+</body>
+</html>
